@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto 1</title>
+</head>
+<body>
+    <h1>Objeto 1: Persona</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const persona = { nombre: "Juan", edad: 25, ciudad: "Madrid" };
+        let salida = `Nombre: ${persona.nombre}\nEdad: ${persona.edad}\nCiudad: ${persona.ciudad}`;
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

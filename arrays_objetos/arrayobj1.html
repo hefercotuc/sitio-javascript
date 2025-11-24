@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Array de objetos 1</title>
+</head>
+<body>
+    <h1>Array de objetos 1: Personas</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const personas = [
+            {nombre: "Ana", edad: 25},
+            {nombre: "Luis", edad: 30},
+            {nombre: "María", edad: 22}
+        ];
+        let salida = "";
+        personas.forEach(persona => {
+            salida += `Nombre: ${persona.nombre}\n`;
+        });
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

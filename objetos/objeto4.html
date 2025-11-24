@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto 4</title>
+</head>
+<body>
+    <h1>Objeto 4: Libro</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const libro = {
+            titulo: "El Quijote",
+            autor: "Cervantes",
+            año: 1605,
+            descripcion: function() { return `${this.titulo} de ${this.autor} (${this.año})`; }
+        };
+        let salida = libro.descripcion();
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

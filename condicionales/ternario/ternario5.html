@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ternario 5</title>
+</head>
+<body class="bg-dark text-white">
+    <h1>Ternario 5: ¿Puede votar?</h1>
+
+    <script>
+        let nacimiento = prompt("Ingresa tu año de nacimiento:");
+        let añoActual = new Date().getFullYear();
+
+        let edad = añoActual - nacimiento;
+
+        let mensaje = edad >= 18 ? "Puedes votar" : "No puedes votar";
+        alert(mensaje);
+    </script>
+</body>
+</html>

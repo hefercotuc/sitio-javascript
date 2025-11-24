@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto 3</title>
+</head>
+<body>
+    <h1>Objeto 3: Rectángulo</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const rectangulo = {
+            ancho: 5,
+            alto: 10,
+            area: function() { return this.ancho * this.alto; }
+        };
+        let salida = `Área del rectángulo: ${rectangulo.area()}`;
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

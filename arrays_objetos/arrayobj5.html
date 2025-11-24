@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Array de objetos 5</title>
+</head>
+<body>
+    <h1>Array de objetos 5: Libros</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const libros = [
+            {titulo: "Cien años de soledad", autor: "Gabriel García Márquez"},
+            {titulo: "Don Quijote", autor: "Miguel de Cervantes"},
+            {titulo: "La sombra del viento", autor: "Carlos Ruiz Zafón"}
+        ];
+        let salida = libros.map(l => l.titulo).join("\n");
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

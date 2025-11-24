@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Array de objetos 4</title>
+</head>
+<body>
+    <h1>Array de objetos 4: Alumnos aprobados</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const alumnos = [
+            {nombre: "Carlos", nota: 75},
+            {nombre: "Lucía", nota: 50},
+            {nombre: "Pedro", nota: 90},
+            {nombre: "Ana", nota: 60},
+            {nombre: "Luis", nota: 45}
+        ];
+        let aprobados = alumnos.filter(a => a.nota >= 60).map(a => a.nombre).join("\n");
+        console.log(aprobados);
+        document.getElementById("resultado").textContent = aprobados;
+    </script>
+</body>
+</html>

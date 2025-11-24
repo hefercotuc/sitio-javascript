@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch 3</title>
+</head>
+<body class="bg-dark text-white">
+    <h1>Switch 3: Mes del año</h1>
+
+    <script>
+        let mes = parseInt(prompt("Ingresa un número del 1 al 12:"));
+        let meses = [
+            "Enero", "Febrero", "Marzo", "Abril",
+            "Mayo", "Junio", "Julio", "Agosto",
+            "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ];
+
+        alert(mes >= 1 && mes <= 12 ? meses[mes - 1] : "Número inválido");
+    </script>
+</body>
+</html>

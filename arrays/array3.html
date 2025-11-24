@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Array 3</title>
+</head>
+<body>
+    <h1>Array 3: Suma de números</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        let numeros = [];
+        for(let i=0; i<5; i++){
+            numeros.push(parseInt(prompt(`Introduce el número ${i+1}`)));
+        }
+        let suma = numeros.reduce((acum, val) => acum + val, 0);
+        let salida = `La suma de los números es: ${suma}`;
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

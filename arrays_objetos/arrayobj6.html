@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Array de objetos 6</title>
+</head>
+<body>
+    <h1>Array de objetos 6: Películas</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const peliculas = [
+            {titulo: "Inception", director: "Christopher Nolan", año: 2010},
+            {titulo: "Avatar", director: "James Cameron", año: 2009},
+            {titulo: "Titanic", director: "James Cameron", año: 1997}
+        ];
+        let salida = peliculas.map(p => `${p.titulo} - ${p.director} (${p.año})`).join("\n");
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

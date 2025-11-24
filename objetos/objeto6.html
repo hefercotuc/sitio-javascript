@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto 6</title>
+</head>
+<body>
+    <h1>Objeto 6: Gato</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const gato = {
+            nombre: "Michi",
+            edad: 3,
+            info: function() { return `El gato ${this.nombre} tiene ${this.edad} años`; }
+        };
+        let salida = gato.info();
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Array de objetos 3</title>
+</head>
+<body>
+    <h1>Array de objetos 3: Productos</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const productos = [
+            {nombre: "Televisor", precio: 200},
+            {nombre: "Laptop", precio: 800},
+            {nombre: "Mouse", precio: 50},
+            {nombre: "Monitor", precio: 150}
+        ];
+        let salida = productos.filter(p => p.precio > 100).map(p => p.nombre).join("\n");
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

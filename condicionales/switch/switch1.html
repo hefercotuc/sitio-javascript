@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch 1</title>
+</head>
+<body class="bg-dark text-white">
+    <h1>Switch 1: Día de la semana</h1>
+
+    <script>
+        let dia = parseInt(prompt("Ingresa un número del 1 al 7:"));
+        let nombreDia;
+
+        switch (dia) {
+            case 1: nombreDia = "Lunes"; break;
+            case 2: nombreDia = "Martes"; break;
+            case 3: nombreDia = "Miércoles"; break;
+            case 4: nombreDia = "Jueves"; break;
+            case 5: nombreDia = "Viernes"; break;
+            case 6: nombreDia = "Sábado"; break;
+            case 7: nombreDia = "Domingo"; break;
+            default: nombreDia = "Número inválido"; break;
+        }
+
+        alert(nombreDia);
+    </script>
+</body>
+</html>

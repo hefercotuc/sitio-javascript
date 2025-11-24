@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch 5</title>
+</head>
+<body class="bg-dark text-white">
+    <h1>Switch 5: Semáforo</h1>
+
+    <script>
+        let color = prompt("Ingresa un color (verde, amarillo, rojo):").toLowerCase();
+
+        switch (color) {
+            case "verde":
+                alert("Puedes avanzar");
+                break;
+            case "amarillo":
+                alert("Precaución");
+                break;
+            case "rojo":
+                alert("Detente");
+                break;
+            default:
+                alert("Color no válido");
+        }
+    </script>
+</body>
+</html>

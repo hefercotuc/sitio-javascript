@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Array 4</title>
+</head>
+<body>
+    <h1>Array 4: Recorrer palabras</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const palabras = ["manzana", "pera", "plátano", "uva", "fresa"];
+        let salida = "";
+        for(let palabra of palabras){
+            salida += palabra + "\n";
+        }
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

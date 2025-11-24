@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciclo 3</title>
+</head>
+<body class="bg-dark text-white">
+    <h1>Ciclo 3: Contar letra 'a'</h1>
+
+    <script>
+        let palabra = prompt("Ingresa una palabra:");
+        let contador = 0;
+
+        for (let i = 0; i < palabra.length; i++) {
+            if (palabra[i].toLowerCase() === "a") {
+                contador++;
+            }
+        }
+
+        alert("La letra 'a' aparece " + contador + " veces");
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Array de objetos 2</title>
+</head>
+<body>
+    <h1>Array de objetos 2: Coches</h1>
+    <pre id="resultado"></pre>
+
+    <script>
+        const coches = [
+            {marca: "Toyota", modelo: "Corolla"},
+            {marca: "Honda", modelo: "Civic"},
+            {marca: "Ford", modelo: "Focus"},
+            {marca: "BMW", modelo: "X3"},
+            {marca: "Audi", modelo: "A3"}
+        ];
+        let salida = coches.map(coche => coche.modelo).join("\n");
+        console.log(salida);
+        document.getElementById("resultado").textContent = salida;
+    </script>
+</body>
+</html>

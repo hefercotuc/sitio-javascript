@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas JavaScript</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        #sidebar {
+            width: 260px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 56px;
+            background-color: #212529;
+            padding-top: 15px;
+            overflow-y: auto;
+        }
+
+        #visor-container {
+            margin-left: 260px;
+            margin-top: 56px;
+            height: calc(100vh - 56px);
+        }
+
+        #visor {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .menu-title {
+            padding-left: 15px;
+            margin-top: 20px;
+            color: #ffc107;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+
+    <!-- NAVBAR SUPERIOR -->
+    <nav class="navbar navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+            <span class="navbar-brand fw-bold">Prácticas JavaScript</span>
+        </div>
+    </nav>
+
+    <!-- BARRA LATERAL -->
+    <aside id="sidebar" class="text-white">
+
+        <!-- SALIDAS A PANTALLA -->
+        <div class="menu-title">Salidas a pantalla</div>
+        <div class="list-group list-group-flush">
+            <a href="./salidas a pantalla/salida1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">1. Bienvenida consola</a>
+            <a href="./salidas a pantalla/salida2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">2. Suma</a>
+            <a href="./salidas a pantalla/salida3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">3. Saludo prompt</a>
+            <a href="./salidas a pantalla/salida4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">4. Mostrar variable</a>
+            <a href="./salidas a pantalla/salida5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">5. Fecha actual</a>
+            <a href="./salidas a pantalla/salida6.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">6. Hola Mundo</a>
+        </div>
+
+        <!-- VARIABLES -->
+        <div class="menu-title">Variables</div>
+        <div class="list-group list-group-flush">
+            <a href="./variables/variable1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">1. Datos persona</a>
+            <a href="./variables/variable2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">2. PI</a>
+            <a href="./variables/variable3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">3. Número + texto</a>
+            <a href="./variables/variable4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">4. Multiplicación</a>
+            <a href="./variables/variable5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">5. Edad</a>
+            <a href="./variables/variable6.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">6. Nombre completo</a>
+        </div>
+
+        <!-- FUNCIONES -->
+        <div class="menu-title">Funciones</div>
+        <div class="list-group list-group-flush">
+            <a href="./funciones/funcion1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">1. Sumar</a>
+            <a href="./funciones/funcion2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">2. Saludar</a>
+            <a href="./funciones/funcion3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">3. Área círculo</a>
+            <a href="./funciones/funcion4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">4. Mayor de dos</a>
+            <a href="./funciones/funcion5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">5. Par o impar</a>
+            <a href="./funciones/funcion6.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">6. Promedio</a>
+        </div>
+
+        <!-- CONDICIONALES (IF + IF ELSE + SWITCH + TERNARIO) -->
+        <div class="menu-title">Condicionales</div>
+        <div class="list-group list-group-flush">
+            <a href="./condicionales/if/if1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF 1. Mayor que 10</a>
+            <a href="./condicionales/if/if2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF 2. Mayor de 18</a>
+            <a href="./condicionales/if/if3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF 3. Aprobado</a>
+            <a href="./condicionales/if/if4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF 4. Positivo</a>
+            <a href="./condicionales/if/if5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF 5. Mayor entre dos</a>
+
+            <a href="./condicionales/if else/ifelse1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF-ELSE 1. Frío/Calor</a>
+            <a href="./condicionales/if else/ifelse2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF-ELSE 2. Mayor de edad</a>
+            <a href="./condicionales/if else/ifelse3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF-ELSE 3. Par/Impar</a>
+            <a href="./condicionales/if else/ifelse4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF-ELSE 4. Aprobado 60</a>
+            <a href="./condicionales/if else/ifelse5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">IF-ELSE 5. Pos/Neg/Cero</a>
+
+            <a href="./condicionales/switch/switch1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">SWITCH 1. Día semana</a>
+            <a href="./condicionales/switch/switch2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">SWITCH 2. A-B-C</a>
+            <a href="./condicionales/switch/switch3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">SWITCH 3. Mes</a>
+            <a href="./condicionales/switch/switch4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">SWITCH 4. Par/Impar</a>
+            <a href="./condicionales/switch/switch5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">SWITCH 5. Semáforo</a>
+
+            <a href="./condicionales/ternario/ternario1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">TERN 1. Mayor/Menor</a>
+            <a href="./condicionales/ternario/ternario2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">TERN 2. Par/Impar</a>
+            <a href="./condicionales/ternario/ternario3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">TERN 3. Mayor entre dos</a>
+            <a href="./condicionales/ternario/ternario4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">TERN 4. Calor/Frío</a>
+            <a href="./condicionales/ternario/ternario5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">TERN 5. Puede votar</a>
+        </div>
+
+        <!-- CICLOS -->
+        <div class="menu-title">Ciclos</div>
+        <div class="list-group list-group-flush">
+            <a href="./ciclos/for1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">1. For Números del 1 al 10</a>
+            <a href="./ciclos/for2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">2. For Tabla de multiplicar</a>
+            <a href="./ciclos/for3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">3. For Contar letra "a"</a>
+            <a href="./ciclos/while1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">4. While Suma del 1 al 100</a>
+            <a href="./ciclos/while2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">5. While Primeros 10 números pares</a>
+            <a href="./ciclos/dowhile1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">6. Do…while Pedir números hasta uno negativo</a>
+        </div>
+
+        <!-- OBJETOS -->
+        <div class="menu-title">Objetos</div>
+        <div class="list-group list-group-flush">
+            <a href="./objetos/objeto1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">1. Persona</a>
+            <a href="./objetos/objeto2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">2. Coche</a>
+            <a href="./objetos/objeto3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">3. Rectángulo</a>
+            <a href="./objetos/objeto4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">4. Libro</a>
+            <a href="./objetos/objeto5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">5. Usuario</a>
+            <a href="./objetos/objeto6.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">6. Gato</a>
+        </div>
+
+        <!-- ARRAYS -->
+        <div class="menu-title">Arrays</div>
+        <div class="list-group list-group-flush">
+            <a href="./arrays/array1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">1. Primer/Último</a>
+            <a href="./arrays/array2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">2. Ciudades</a>
+            <a href="./arrays/array3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">3. Suma de 5 números</a>
+            <a href="./arrays/array4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">4. Recorrer palabras</a>
+            <a href="./arrays/array5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">5. Guardar nombres</a>
+            <a href="./arrays/array6.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">6. Mayores de 50</a>
+        </div>
+
+        <!-- ARRAYS DE OBJETOS -->
+        <div class="menu-title">Arrays de objetos</div>
+        <div class="list-group list-group-flush">
+            <a href="./arrays_objetos/arrayobj1.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">1. Personas</a>
+            <a href="./arrays_objetos/arrayobj2.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">2. Coches</a>
+            <a href="./arrays_objetos/arrayobj3.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">3. Productos > 100</a>
+            <a href="./arrays_objetos/arrayobj4.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">4. Aprobados</a>
+            <a href="./arrays_objetos/arrayobj5.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">5. Libros</a>
+            <a href="./arrays_objetos/arrayobj6.html" target="visor" class="list-group-item list-group-item-action bg-dark text-white">6. Películas</a>
+        </div>
+
+    </aside>
+
+
+    <!-- VISOR -->
+    <main id="visor-container">
+        <iframe id="visor" name="visor" src="./welcome/welcome.html"></iframe>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

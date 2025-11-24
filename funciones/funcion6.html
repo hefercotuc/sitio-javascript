@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones 6</title>
+</head>
+<body class="bg-dark text-white">
+    <h1>Funciones 6: Promedio de un arreglo</h1>
+
+    <script>
+        function promedio(numeros) {
+            let suma = 0;
+            for (let num of numeros) {
+                suma += num;
+            }
+            return suma / numeros.length;
+        }
+
+        let lista = [10, 20, 30, 40, 50];
+        console.log("El promedio es:", promedio(lista));
+    </script>
+</body>
+</html>
